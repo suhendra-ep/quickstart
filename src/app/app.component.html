@@ -1,2 +1,10 @@
-<h1>Hello World</h1>
-<my-profile></my-profile>
+<h3>ngIf example</h3>
+<p *ngIf="price > 250">Expensive</p>
+<hr>
+<h3>ngFor example</h3>
+<div *ngFor="let person of persons"> 
+    <ul> 
+       <li>ID: {{person.ID}}</li> 
+       <li>Name: {{person.name}}</li> 
+    </ul> 
+ </div>

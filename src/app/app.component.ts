@@ -5,4 +5,21 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent  { }
+export class AppComponent  { 
+  price: number = 300;
+
+  persons: any[] = [
+    {
+      ID: 1,
+      name: 'John Doe'
+    },
+    {
+      ID: 2,
+      name: 'Tukul Shinoda'
+    },
+    {
+      ID: 3,
+      name: 'Sule Arwana'
+    }
+  ]
+}
