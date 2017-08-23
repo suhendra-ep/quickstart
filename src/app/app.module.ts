@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent }  from './app.component';
 import { ProfileComponent } from './profile.component';
+import { HelloService } from './hello.service';
 
 @NgModule({
   imports:      [ BrowserModule ],
@@ -10,6 +11,9 @@ import { ProfileComponent } from './profile.component';
     AppComponent,
     ProfileComponent
   ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [
+    HelloService
+  ],
 })
 export class AppModule { }
