@@ -1,0 +1,19 @@
+<div>
+    <h1>Profile Form</h1>
+    <form (ngSubmit)="onSubmit()" #profileForm="ngForm">
+       <div>
+          <label for = "id">ID</label>
+          <input type = "text" id = "id" [(ngModel)] = "person.ID" name = "id">
+       </div>
+       <div>
+          <label for = "name">Name</label>
+          <input type = "text" id = "name" [(ngModel)] = "person.Name" name = "name">
+       </div>
+       <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+    <h1>Profile Detail</h1>
+    <div>
+        <p>ID: {{person.ID}}</p>
+        <p>Name: {{person.Name}}</p>
+    </div>
+ </div>
