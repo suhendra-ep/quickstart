@@ -1,2 +1,14 @@
 <button (click)="onButtonClick()">Say Hello</button>
 <h1>{{text}}</h1>
+
+<form>
+    <label for="a_field">a</label>
+    <input [(ngModel)]="a" type="number" id="a_field" name="a"/>
+    <br>
+    <label for="b_field">b</label>
+    <input [(ngModel)]="b" type="number" id="b_field" name="b"/>
+    <br>
+    <label>Result: {{result}}</label>
+    <br>
+    <button (click)="onCountClick()">Count</button>
+</form>
